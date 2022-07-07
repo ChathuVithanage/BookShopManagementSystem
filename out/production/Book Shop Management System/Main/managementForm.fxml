@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" prefHeight="850.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.managementFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9797a1" height="75.0" layoutY="-9.0" stroke="#656566f0" strokeType="INSIDE" width="1250.0" />
+      <Label layoutX="470.0" layoutY="14.0" prefHeight="21.0" prefWidth="310.0" text="WELCOME TO PRARTHANA BOOK SHOP">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="531.0" layoutY="35.0" prefHeight="21.0" prefWidth="187.0" text="MANAGEMENT SYSTEM">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="14.0" layoutY="4.0">
+         <image>
+            <Image url="@../../../../Desktop/Screenshot_2022-03-13-09-20-05-564_com.miui.gallery.png" />
+         </image>
+      </ImageView>
+      <TabPane layoutY="66.0" prefHeight="777.0" prefWidth="1250.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Dashboard">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="598.0" prefWidth="952.0" style="-fx-background-color: white;">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bbbbbb" height="75.0" layoutX="44.0" layoutY="126.0" stroke="#adaaaa37" strokeType="INSIDE" width="380.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bbbbbb" height="75.0" layoutX="128.0" layoutY="267.0" stroke="#adaaaa37" strokeType="INSIDE" width="380.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bbbbbb" height="75.0" layoutX="224.0" layoutY="399.0" stroke="#adaaaa37" strokeType="INSIDE" width="380.0" />
+                        <ImageView fitHeight="715.0" fitWidth="540.0" layoutX="699.0" layoutY="14.0">
+                           <image>
+                              <Image url="file:/C:/Users/HP/Downloads/alex-lvrs-2zDw14yCYqk-unsplash.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="59.0" layoutY="141.0">
+                           <image>
+                              <Image url="file:/C:/Users/HP/Downloads/open-book.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="48.0" fitWidth="44.0" layoutX="242.0" layoutY="413.0">
+                           <image>
+                              <Image url="file:/C:/Users/HP/Downloads/books-stack-of-three.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="50.0" fitWidth="45.0" layoutX="141.0" layoutY="280.0">
+                           <image>
+                              <Image url="file:/C:/Users/HP/Downloads/employees.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="141.0" layoutY="152.0" text="Book Genres   ">
+                           <font>
+                              <Font name="Cambria Math" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="224.0" layoutY="293.0" text="Employees        ">
+                           <font>
+                              <Font name="Cambria Math" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="318.0" layoutY="425.0" text="Total Books    ">
+                           <font>
+                              <Font name="Cambria Math" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCountEmployee" layoutX="435.0" layoutY="293.0" prefHeight="24.0" prefWidth="47.0" text="5">
+                           <font>
+                              <Font name="Cambria Math" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCountCategory" layoutX="353.0" layoutY="152.0" prefHeight="24.0" prefWidth="55.0" text="10">
+                           <font>
+                              <Font name="Cambria Math" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCountBook" layoutX="522.0" layoutY="425.0" prefHeight="24.0" prefWidth="47.0" text="100">
+                           <font>
+                              <Font name="Cambria Math" size="20.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Add book">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #f2f3f5;">
+                     <children>
+                        <Label layoutX="28.0" layoutY="172.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8ca3bf7d" height="648.0" layoutX="65.0" layoutY="42.0" opacity="0.62" stroke="#8ca3bf" strokeType="INSIDE" width="688.0" />
+                        <Label layoutX="342.0" layoutY="83.0" prefHeight="34.0" prefWidth="135.0" text="Add New Book" textFill="#a83110">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="156.0" layoutY="183.0" text="Book Id" />
+                        <Label layoutX="156.0" layoutY="241.0" text="Name" />
+                        <Label layoutX="153.0" layoutY="298.0" text="Author" />
+                        <Label layoutX="151.0" layoutY="359.0" text="Quntity" />
+                        <Label layoutX="149.0" layoutY="411.0" text="Cost Price" />
+                        <Label layoutX="149.0" layoutY="468.0" text="Selling Price" />
+                        <Label layoutX="146.0" layoutY="523.0" text="Category" />
+                        <TextField fx:id="txtId" layoutX="290.0" layoutY="178.0" onAction="#bookSelectedOnAction" onKeyReleased="#bookIdReleasedOnAction" prefHeight="31.0" prefWidth="310.0" style="-fx-background-radius: 5;" />
+                        <ComboBox fx:id="cmbCategory" layoutX="290.0" layoutY="518.0" prefHeight="31.0" prefWidth="310.0" style="-fx-background-color: white; -fx-background-radius: 5;" />
+                        <Button fx:id="bookAddBtn" layoutX="293.0" layoutY="611.0" mnemonicParsing="false" onAction="#bookAddOnAction" prefHeight="35.0" prefWidth="152.0" style="-fx-background-color: #576d94; -fx-background-radius: 20;" text="Add Stock" textFill="#eee8e8">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="524.0" layoutY="611.0" mnemonicParsing="false" onAction="#bookUpdateOnAction" prefHeight="35.0" prefWidth="152.0" style="-fx-background-radius: 20; -fx-background-color: #576d94;" text="Update" textFill="#f8f3f3">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="txtBookName" layoutX="290.0" layoutY="236.0" onKeyReleased="#bookNameReleasedOnAction" prefHeight="31.0" prefWidth="310.0" style="-fx-background-radius: 5;" />
+                        <TextField fx:id="txtAuthor" layoutX="290.0" layoutY="293.0" onKeyReleased="#authorReleasedOnAction" prefHeight="31.0" prefWidth="310.0" style="-fx-background-radius: 5;" />
+                        <TextField fx:id="txtQty" layoutX="290.0" layoutY="349.0" onKeyReleased="#quantityReleasedOnAction" prefHeight="31.0" prefWidth="310.0" style="-fx-background-radius: 5;" />
+                        <TextField fx:id="txtCostPrice" layoutX="290.0" layoutY="406.0" onKeyReleased="#costPriceReleasedOnAction" prefHeight="31.0" prefWidth="310.0" style="-fx-background-radius: 5;" />
+                        <TextField fx:id="txtSellPrice" layoutX="290.0" layoutY="463.0" onKeyReleased="#sellPriceReleasedOnAction" prefHeight="31.0" prefWidth="310.0" style="-fx-background-radius: 5;" />
+                        <ImageView fitHeight="222.0" fitWidth="274.0" layoutX="814.0" layoutY="326.0" opacity="0.12">
+                           <image>
+                              <Image url="file:/C:/Users/HP/Downloads/open-book%20(2).png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="268.0" fitWidth="230.0" layoutX="899.0" layoutY="477.0" opacity="0.95">
+                           <image>
+                              <Image url="file:/C:/Users/HP/Downloads/businessman.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Employee Detail">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="748.0" prefWidth="1250.0" style="-fx-background-color: #d5dfe6;">
+                     <children>
+                        <Label layoutX="76.0" layoutY="28.0" text="NIC" />
+                        <Label layoutX="370.0" layoutY="28.0" text="Name" />
+                        <Label layoutX="663.0" layoutY="28.0" text="Contact No" />
+                        <Label layoutX="74.0" layoutY="105.0" text="Address" />
+                        <TextField fx:id="txtEmNic" layoutX="76.0" layoutY="59.0" onAction="#EmNicOnAction" onKeyReleased="#emNicReleasedOnAction" prefHeight="31.0" prefWidth="235.0" style="-fx-background-radius: 5;" />
+                        <TextField fx:id="txtEmName" layoutX="370.0" layoutY="59.0" onKeyReleased="#emNameReleasedOnAction" prefHeight="31.0" prefWidth="235.0" style="-fx-background-radius: 5;" />
+                        <TextField fx:id="txtContact" layoutX="663.0" layoutY="59.0" onKeyReleased="#emContactReleasedOnAction" prefHeight="31.0" prefWidth="235.0" style="-fx-background-radius: 5;" />
+                        <TextField fx:id="txtAddress" layoutX="76.0" layoutY="136.0" onKeyReleased="#emAddressReleasedOnAction" prefHeight="31.0" prefWidth="235.0" style="-fx-background-radius: 5;" />
+                        <Button fx:id="saveEmBtn" layoutX="991.0" layoutY="59.0" mnemonicParsing="false" onAction="#EmSaveOnAction" opacity="0.93" prefHeight="21.0" prefWidth="198.0" style="-fx-background-color: #1234; -fx-background-radius: 15;" text="Save" />
+                        <Label layoutX="370.0" layoutY="105.0" text="Age" />
+                        <TextField fx:id="txtAge" layoutX="370.0" layoutY="136.0" onKeyReleased="#emAgeReleasedOnAction" prefHeight="31.0" prefWidth="235.0" style="-fx-background-radius: 5;" />
+                        <TableView fx:id="employeeTbl" layoutX="42.0" layoutY="191.0" prefHeight="458.0" prefWidth="1165.0">
+                          <columns>
+                            <TableColumn fx:id="nicClm" prefWidth="140.0" text="NIC" />
+                            <TableColumn fx:id="nameClm" prefWidth="160.0" text="Name" />
+                              <TableColumn fx:id="contactClm" prefWidth="169.0" text="Contact No" />
+                              <TableColumn fx:id="addressClm" prefWidth="238.0" text="Address" />
+                              <TableColumn fx:id="ageClm" prefWidth="95.0" text="Age" />
+                              <TableColumn fx:id="salaryClm" prefWidth="159.0" text="Salary" />
+                              <TableColumn fx:id="optionsClm" prefWidth="203.0" text="Options" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="992.0" layoutY="121.0" mnemonicParsing="false" onAction="#EmUpdateOnAction" opacity="0.93" prefHeight="30.0" prefWidth="195.0" style="-fx-background-color: #1234; -fx-background-radius: 15;" text="Update" />
+                        <Separator layoutX="956.0" layoutY="10.0" orientation="VERTICAL" prefHeight="165.0" prefWidth="2.0" />
+                        <Button layoutX="1066.0" layoutY="678.0" mnemonicParsing="false" onAction="#EmRefreshOnAction" prefHeight="31.0" prefWidth="121.0" style="-fx-background-color: #666666; -fx-background-radius: 10;" text="Refresh" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="663.0" layoutY="105.0" text="Salary" />
+                        <TextField fx:id="txtSalary" layoutX="663.0" layoutY="137.0" onKeyReleased="#emSalaryReleasedOnAction" prefHeight="31.0" prefWidth="235.0" style="-fx-background-radius: 5;" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="store">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #d4d4d4;">
+                     <children>
+                        <TableView fx:id="booksTbl" layoutX="67.0" layoutY="104.0" prefHeight="530.0" prefWidth="1113.0">
+                          <columns>
+                            <TableColumn fx:id="bookIdClm" prefWidth="98.0" text="Book Id" />
+                            <TableColumn fx:id="bookNameClm" prefWidth="145.99996948242188" text="Name" />
+                              <TableColumn fx:id="bookAuthorClm" prefWidth="166.0" text="Author" />
+                              <TableColumn fx:id="bookQtyClm" prefWidth="89.0" text="Quantity" />
+                              <TableColumn fx:id="bookCpClm" prefWidth="144.0" text="Cost Price" />
+                              <TableColumn fx:id="bookSpClm" prefWidth="135.0" text="Selling Price" />
+                              <TableColumn fx:id="bookCategoryClm" prefWidth="175.0" text="Category" />
+                              <TableColumn fx:id="bookOptionsClm" prefWidth="159.0" text="Options" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="146.0" layoutY="47.0" prefHeight="27.0" prefWidth="152.0" text="List Of Books">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="41.0" fitWidth="55.0" layoutX="67.0" layoutY="42.0">
+                           <image>
+                              <Image url="file:/C:/Users/HP/Downloads/open-book.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="income report">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutX="84.0" layoutY="179.0" prefHeight="449.0" prefWidth="516.0" style="-fx-background-color: #d4d4d4; -fx-border-color: #1234;">
+                           <children>
+                              <Label layoutX="39.0" layoutY="144.0" text="No Of Books Sold">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtNoOfBooks" layoutX="291.0" layoutY="137.0" prefHeight="39.0" prefWidth="175.0" />
+                              <Label layoutX="39.0" layoutY="209.0" prefHeight="25.0" prefWidth="195.0" text="Total expenses">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtTotalSalary" layoutX="291.0" layoutY="202.0" prefHeight="39.0" prefWidth="175.0" />
+                              <Label layoutX="39.0" layoutY="271.0" prefHeight="25.0" prefWidth="195.0" text="Total Income">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtTotalIncome" layoutX="291.0" layoutY="264.0" prefHeight="39.0" prefWidth="175.0" />
+                              <Label layoutX="39.0" layoutY="336.0" prefHeight="25.0" prefWidth="195.0" text="Profit">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtProfit" layoutX="291.0" layoutY="329.0" prefHeight="39.0" prefWidth="175.0" />
+                              <Label layoutX="41.0" layoutY="61.0" text="Date">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtDate" layoutX="291.0" layoutY="54.0" prefHeight="39.0" prefWidth="175.0" />
+                           </children>
+                        </Pane>
+                        <Button layoutX="119.0" layoutY="84.0" mnemonicParsing="false" onAction="#dailyReportOnAction" prefHeight="40.0" prefWidth="185.0" style="-fx-background-color: #1234; -fx-background-radius: 10;" text="Daily Report" />
+                        <ImageView fitHeight="292.0" fitWidth="513.0" layoutX="673.0" layoutY="77.0" opacity="0.11">
+                           <image>
+                              <Image url="file:/C:/Users/HP/Downloads/a9a1ce58-69a6-4c8b-a585-d748248131a1.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="377.0" layoutY="84.0" mnemonicParsing="false" onAction="#weeklyReportOnAction" prefHeight="40.0" prefWidth="185.0" style="-fx-background-color: #1234; -fx-background-radius: 10;" text="Weekly Report" />
+                        <ImageView fitHeight="215.0" fitWidth="403.0" layoutX="697.0" layoutY="136.0" opacity="0.12">
+                           <image>
+                              <Image url="file:/C:/Users/HP/Downloads/fbbe82f9-2d66-4bc5-b3ba-023f21c04079.png" />
+                           </image>
+                        </ImageView>
+                        <Circle fill="#b2e0eb" layoutX="22.0" layoutY="675.0" opacity="0.59" radius="128.0" stroke="#b2e0eb" strokeType="INSIDE" />
+                        <Ellipse fill="#b2e0eb" layoutX="779.0" layoutY="587.0" opacity="0.8" radiusX="69.0" radiusY="27.0" stroke="#b2e0eb" strokeType="INSIDE" />
+                        <ImageView fitHeight="401.0" fitWidth="378.0" layoutX="721.0" layoutY="222.0">
+                           <image>
+                              <Image url="file:/C:/Users/HP/Downloads/bf070bab-c81c-4667-bf0e-876c98eff7bb.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button layoutX="1121.0" layoutY="12.0" mnemonicParsing="false" onAction="#mnLogOutOnAction" prefHeight="39.0" prefWidth="104.0" style="-fx-background-color: #d1d1d1; -fx-background-radius: 8;" text="Log Out">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

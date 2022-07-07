@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginFormController">
+   <children>
+      <Polygon fill="#eeeaf8" points="0.0, 693.0, 489.0, 693.0, 0.0, -388.0" stroke="#c8b6cf0b" strokeType="INSIDE" />
+      <ImageView fitHeight="247.0" fitWidth="347.0" layoutX="84.0" layoutY="382.0">
+         <image>
+            <Image url="file:/C:/Users/HP/Downloads/240_F_267084685_5JGUsuqjd5iTzKj2BImFWXn7YyVaDpq8.jpg" />
+         </image>
+      </ImageView>
+      <Polygon fill="#dbdbdb5b" layoutX="381.0" layoutY="246.0" opacity="0.82" points="-32.0, 136.0, 50.0, 324.0, 50.0, 136.0" stroke="#cccaca00" strokeType="INSIDE" />
+      <Label layoutX="112.0" layoutY="191.0" prefHeight="68.0" prefWidth="237.0" text="Welcome Back...">
+         <font>
+            <Font name="Book Antiqua Bold" size="29.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="82.0" fitWidth="82.0" layoutX="17.0" layoutY="19.0" opacity="0.74">
+         <image>
+            <Image url="@../../../Screenshot_2022-03-13-09-20-05-564_com.miui.gallery.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e7e9eb" height="585.0" layoutX="493.0" layoutY="54.0" stroke="#d6d6d620" strokeType="INSIDE" width="372.0" />
+      <Text layoutX="525.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="68.99999952316284" />
+      <ImageView fitHeight="65.0" fitWidth="69.0" layoutX="645.0" layoutY="126.0">
+         <image>
+            <Image url="file:/C:/Users/HP/Downloads/account%20(1).png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtName" layoutX="611.0" layoutY="269.0" opacity="0.97" prefHeight="31.0" prefWidth="227.0" style="-fx-background-radius: 5;" />
+      <Text layoutX="525.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="68.99999952316284" />
+      <Button fx:id="mnLoginBtn" layoutX="580.0" layoutY="417.0" mnemonicParsing="false" onAction="#logOnAction" prefHeight="21.0" prefWidth="198.0" style="-fx-background-color: #d3d2d4; -fx-background-radius: 10; -fx-border-color: #c8b1#d3d2d40; -fx-border-radius: 10;" text="Log in">
+         <font>
+            <Font name="Bell MT Bold" size="20.0" />
+         </font>
+      </Button>
+      <Text layoutX="634.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="or login with" wrappingWidth="90.00000095367432" />
+      <ImageView fitHeight="28.0" fitWidth="33.0" layoutX="594.0" layoutY="533.0">
+         <image>
+            <Image url="file:/C:/Users/HP/Downloads/google%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="33.0" layoutX="663.0" layoutY="533.0">
+         <image>
+            <Image url="file:/C:/Users/HP/Downloads/facebook%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="33.0" layoutX="735.0" layoutY="533.0">
+         <image>
+            <Image url="file:/C:/Users/HP/Downloads/twitter.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="txtPwd" layoutX="611.0" layoutY="331.0" prefHeight="31.0" prefWidth="227.0" style="-fx-background-radius: 5;" />
+      <Button layoutX="810.0" layoutY="7.0" mnemonicParsing="false" onAction="#backOnAction" prefHeight="21.0" prefWidth="53.0" style="-fx-background-color: #1234; -fx-background-radius: 10;" text="&lt;">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
